@@ -1,0 +1,10 @@
+scrape goodreads api data
+
+attach genre: fantasy 3.2k, young-adult 2.1k, romance 3k, mystery 1.8k, comedy 1k, crime 1.5k, economics 253, politics 750, biography 850, fiction 7k, non-fiction 1.5k, sci-fi 1.1k, horror 750, history 1.9k, spiritual 1k, children 1.5k, comics 550, society 800, science 337
+mix society and economics?
+romance > crime > politics > history > arts > comics
+1. replace words in dataset (tags.csv) with corresponding genre from the list
+2. sort tags by count for each book id
+3. find genre from genre list in tags for each book id (even if 2 or more genre in same tag, extract them all). Stop when 3 genre found from sorted list of tags for each book
+
+deal with missing values
